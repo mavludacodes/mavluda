@@ -1032,6 +1032,14 @@ body.dark-theme {
   background-color: var(--first-color);
 }
 
+.contact__message {
+  color: var(--white-color);
+  font-size: var(--small-font-size);
+  position: absolute;
+  bottom: -1.6rem;
+  left: 0;
+}
+
 /* Move label up & sticky label */
 
 /*=============== FOOTER ===============*/

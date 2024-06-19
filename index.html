@@ -80,7 +80,7 @@
             <div class="geometric-box"></div>
             <div class="home__social">
               <a
-                href="https://t.me/OkGoogler"
+                href="https://t.me/mavluda_tg"
                 target="_blank"
                 class="home__social-link"
               >
@@ -206,7 +206,11 @@
         <div class="projects__container container grid">
           <article class="projects__card">
             <div class="projects__image">
-              <img src="assets/img/project-1.jpg" alt="" class="projects_img" />
+              <img
+                src="assets/img/web/crop_p.png"
+                alt=""
+                class="projects_img"
+              />
               <a href="" class="projects__button button">
                 <i class="ri-arrow-right-up-line"></i>
               </a>
@@ -214,7 +218,66 @@
 
             <div class="projects__content">
               <h3 class="projects__subtitle">Website</h3>
-              <h2 class="projects_title">Restaurant Website</h2>
+              <h2 class="projects_title">Mavluda's portfolio</h2>
+              <p class="projects_description">
+                Project that you carry out in the design and structure of the
+                layout, showing the design at the client's request.
+              </p>
+            </div>
+            <div class="projects__buttons">
+              <a href="" target="_blank" class="projects__link">
+                <i class="ri-github-line"></i>View
+              </a>
+              <a href="" class="projects__link">
+                <i class="ri-dribbble-line"></i>View
+              </a>
+            </div>
+          </article>
+
+          <article class="projects__card">
+            <div class="projects__image">
+              <img
+                src="assets/img/web/crop_home.png"
+                alt=""
+                class="projects_img"
+              />
+              <a href="" class="projects__button button">
+                <i class="ri-arrow-right-up-line"></i>
+              </a>
+            </div>
+
+            <div class="projects__content">
+              <h3 class="projects__subtitle">Landing Page</h3>
+              <h2 class="projects_title">Trip Planning</h2>
+              <p class="projects_description">
+                Project that you carry out in the design and structure of the
+                layout, showing the design at the client's request.
+              </p>
+            </div>
+            <div class="projects__buttons">
+              <a href="" target="_blank" class="projects__link">
+                <i class="ri-github-line"></i>View
+              </a>
+              <a href="" class="projects__link">
+                <i class="ri-dribbble-line"></i>View
+              </a>
+            </div>
+          </article>
+          <article class="projects__card">
+            <div class="projects__image">
+              <img
+                src="assets/img/web/crop_room.png"
+                alt=""
+                class="projects_img"
+              />
+              <a href="" class="projects__button button">
+                <i class="ri-arrow-right-up-line"></i>
+              </a>
+            </div>
+
+            <div class="projects__content">
+              <h3 class="projects__subtitle">Web App</h3>
+              <h2 class="projects_title">Room Booking App</h2>
               <p class="projects_description">
                 Project that you carry out in the design and structure of the
                 layout, showing the design at the client's request.
@@ -253,7 +316,11 @@
           <div class="contact__mail">
             <h2 class="contact__title">Send Message</h2>
 
-            <form action="" class="contact__form" id="contact-form">
+            <form
+              class="contact__form"
+              id="contact-form"
+              onsubmit="(e) => sendEmail(e)"
+            >
               <div class="contact__group">
                 <div class="contact__box">
                   <input
@@ -303,7 +370,7 @@
                 <label for="name" class="contact__label">Message</label>
               </div>
               <p class="contact__message" id="contact-message"></p>
-              <button type="button" class="contact__button button">
+              <button type="submit" class="contact__button button">
                 <i class="ri-send-plane-line"></i>
                 Send Message
               </button>
@@ -326,7 +393,7 @@
               </div>
               <div class="contact__social-links">
                 <a
-                  href="https://t.me/OkGoogler"
+                  href="https://t.me/mavluda_tg"
                   target="_blank"
                   class="contact__social-link"
                 >
@@ -378,6 +445,10 @@
     <script src="assets/js/scrollreveal.min.js"></script>
 
     <!--=============== EMAIL JS ===============-->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>

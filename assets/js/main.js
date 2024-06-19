@@ -44,9 +44,29 @@ const contactMessage = document.getElementById("contact-message");
 
 const sendEmail = (e) => {
   e.preventDefault();
+  emailjs
+    .sendForm(
+      "service_qilh5pm",
+      "template_97h0lyr",
+      "#contact-form",
+      "iTB6uWPbWmrb4El-p"
+    )
+    .then(
+      () => {
+        contactMessage.textContent = "Message sent successfully ✅";
+        setTimeout(() => {
+          contactMessage.textContent = "";
+        }, 5000);
+        contactForm.reset();
+      },
+      () => {
+        contactMessage.textContent = "Message not sent (service error) ❌";
+      }
+    );
 };
 
 contactForm.addEventListener("submit", sendEmail);
+
 /*=============== SHOW SCROLL UP ===============*/
 const scrollUp = () => {
   const scrollUp = document.getElementById("scroll-up");
